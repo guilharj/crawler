@@ -9,7 +9,7 @@ import {
 import {
   log as l
 } from "../log/log.mjs";
-import sha256 from "sha256";
+  import sha256 from "sha256";
 
 class Crawler {
   constructor(db, crawl, args) {

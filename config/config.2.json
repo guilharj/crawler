@@ -1,0 +1,93 @@
+{
+  "remote": {
+    "url": "http://alfred-v1.b2w.io/wp-json/api/v1/settings_sanguessuga"
+  },
+  "database": {
+    "development": {
+      "host": "localhost",
+      "port": 5432,
+      "name": "crawler",
+      "user": "guilherme",
+      "password": ""
+    }
+  },
+  "websites": [
+    {
+      "type": "html",
+      "name": "mercadolivre",
+      "domain": "https://veiculos.mercadolivre.com.br",
+      "dependency": {
+        "sitemap": {
+          "hasMany": "item",
+          "through": "url"
+        }
+      },
+      "pages": [
+        {
+        "rootUrl": "/sao-paulo/_DisplayType_G",
+        "name": "sitemap",
+        "nextPages": null,
+        "data": [
+          {
+            "selector": ".item-link",
+            "newKey": "url",
+            "attr": "href"
+          },
+          {
+            "selector": ".main-title span",
+            "newKey": "title",
+            "method": "text"
+          }
+        ]
+       },
+        {
+          "name": "item",
+          "data": [
+            {
+              "selector": ".item-title__primary",
+              "newKey": "name",
+              "method": "text"
+            },
+            {
+              "selector": ".item-description__text",
+              "newKey": "description",
+              "method": "text"
+            },
+            {
+              "join": ["label", "value"],
+              "newKey": "attributes",
+              "list": true
+            },
+            {
+              "selector": ".gallery-image-container img",
+              "newKey": "image",
+              "attr": "src",
+              "list": true
+            },
+            {
+              "selector": ".specs-item strong",
+              "newKey": "label",
+              "method": "text"
+            },
+            {
+              "selector": ".specs-item span",
+              "newKey": "value",
+              "method": "text"
+            },
+            {
+              "selector": ".item-price .price-tag-symbol",
+              "newKey": "price",
+              "attr": "content"
+            },
+            {
+              "method": "text",
+              "selector": ".vip-title-info .item-conditions",
+              "newKey": "itemsSold",
+              "list": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

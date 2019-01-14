@@ -10,6 +10,8 @@ import {
 import { default as Crawler } from "headless-chrome-crawler";
 import { default as cheerio } from "cheerio";
 import { userAgent, getUrl } from "../helper.mjs";
+import URL from "url";
+
 
 const exposeFunction = ({
   instance,
@@ -95,17 +97,18 @@ class Headless extends Parser {
       args: [
         "--no-sandbox",
         "--disable-setuid-sandbox",
-        "--ignore-certificate-errors"
+        "--ignore-certificate-errors",
       ],
       headless: false,
       devtools: true,
       obeyRobotsTxt: false,
-      maxConnections: 50,
+      maxConnections: 2,
       userAgent: userAgent("rotate", this.args.website),
       jQuery: true,
       retryCount: 10,
-      retryDelay: 1000,
+      retryDelay: 10000,
       timeout: 30000,
+      slowMo: 1000,
       ...this.config.parserOptions
     });
   }
@@ -127,13 +130,14 @@ class Headless extends Parser {
     } else {
       uris = [getUrl(this.config.domain, urls.url || this.config.rootUrl)];
     }
-
+    
     this.log("VERBOSE", `[HEADLESS] Parsing website(s) ${uris}...`);
 
     // TODO: Reprocess only error page
     return await Promise.all(
       uris.map(
-        uri =>
+        uri =>{
+          console.log("CARALHO URI DO DIABO", uri)
           new Promise((resolve, reject) => {
             this.parser.queue({
               url: uri,
@@ -163,9 +167,11 @@ class Headless extends Parser {
                 });
 
                 await Promise.all(promises);
-                return await window.__execAction(
+                let a =  await window.__execAction(
                   window.document.documentElement.outerHTML
                 );
+                
+                return a
               },
               evaluatePageArgs: [this.config, parg],
               exposeFunctionsNames: ["__execAction"],
@@ -174,13 +180,14 @@ class Headless extends Parser {
                   instance: this,
                   parg,
                   domain: this.config.domain,
-                  uri: new URL(uri),
+                  uri: new URL.URL(uri),
                   resolve,
                   reject
                 })
               ]
             });
           })
+        }
       )
     );
   }

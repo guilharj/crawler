@@ -1,0 +1,595 @@
+https://apisearch.webmotors.com.br/token
+POST /token HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Dalvik/1.6.0 (Linux; U; Android 4.4.4; XT1032 Build/KXB21.14-L1.40)
+Host: apisearch.webmotors.com.br
+Connection: Keep-Alive
+Accept-Encoding: gzip
+Content-Length: 62
+
+username=userAppAndroid&password=aA123456&grant_type=password&
+
+
+{
+	"access_token": "4FgUDfH6DSPyNWR-ZjaF0QivMwQbE-8TIVVLa-YpvCnIMI9jnbQYgwu6yFF7N_sCBwvRtYHrA27WA6gkT0iUFNaaAU8Pfzg4KHPhnxQsc3_AUoyeMZLF6QcFcEFveE7szhUwijxm4UZz32hcyPMEZxiG_uZQ59VBI3BrReNhGangAuRpjqlOQlS-q5b1iG2JS36MYO94jupkTzv51G29YLosMwjEp6-m_RUtltrYSfaCwlLY9xr_opFBV1dlAJHBQp6T7dRd7TqCyrREnyzujQ1FMpPZpZFXxIllsoll35qVyMNBVp2D2jrYkhG5qJUzV3RF9fLKGYdkYYdUzVNdUDCTAipXsI1fXHkYJuTp0qD6non4zzQGFSTKxgl1aQSg",
+	"token_type": "bearer",
+	"expires_in": 3599,
+	"refresh_token": "e5p2f5D8j9sgwQDu3ROwXWiFTHk6ylsTCNIgteLF-A7i5U-2ADn4z3o_0kQ8SCmsXAyQ-gELt_TiUoKwh8pmME3SIQK7qN5cEeJRNsJiU1BdmGhGL6lRD8UIz6Hs7-vryF6dG_eJSuHUFAer1J1h6vAMXWpXse35JszyW21NxSxX6xTXJVkH0boFUR5MwvapZVOH8VGnEg5GmWh_mLsOGOVptkroMkC8xQP7RH12UFVCCawMdNVjRGDrQc0FX7GF4vzeG8Ba8J9UIl44KWM6Hw8C2e7-lgkEde3EywRS_GY3d7Jd0XtNKlYGoZ4U3Z9MjtkHkm-S5FGXe3QZjc8br9CQPMjXeiEGYoqHdCe-7QYjK-B-FsOT1dWGZUF1gyXp"
+}
+
+
+###############################################################
+#
+
+https://apisearch.webmotors.com.br
+GET /api/carro/anuncios?PaginaQuantidade=24&PaginaAtual=1&Ordenacao=1&TipoAnuncio=0 HTTP/1.1
+Authorization: Bearer 4FgUDfH6DSPyNWR-ZjaF0QivMwQbE-8TIVVLa-YpvCnIMI9jnbQYgwu6yFF7N_sCBwvRtYHrA27WA6gkT0iUFNaaAU8Pfzg4KHPhnxQsc3_AUoyeMZLF6QcFcEFveE7szhUwijxm4UZz32hcyPMEZxiG_uZQ59VBI3BrReNhGangAuRpjqlOQlS-q5b1iG2JS36MYO94jupkTzv51G29YLosMwjEp6-m_RUtltrYSfaCwlLY9xr_opFBV1dlAJHBQp6T7dRd7TqCyrREnyzujQ1FMpPZpZFXxIllsoll35qVyMNBVp2D2jrYkhG5qJUzV3RF9fLKGYdkYYdUzVNdUDCTAipXsI1fXHkYJuTp0qD6non4zzQGFSTKxgl1aQSg
+Accept: application/json
+Accept-Charset: UTF-8
+User-Agent: Dalvik/1.6.0 (Linux; U; Android 4.4.4; XT1032 Build/KXB21.14-L1.40)
+Host: apisearch.webmotors.com.br
+Connection: Keep-Alive
+Accept-Encoding: gzip
+
+
+
+
+{
+	"Sucesso": true,
+	"Retorno": {
+		"Anuncios": [{
+			"Id": 26485705,
+			"Marca": "VOLKSWAGEN",
+			"Modelo": "GOLF",
+			"Versao": "1.4 TSI VARIANT HIGHLINE 16V TOTAL FLEX 4P TIPTRONIC",
+			"Preco": 90900.0,
+			"AnoModelo": 2017,
+			"AnoFabricacao": 2016,
+			"Quilometragem": 13000.0,
+			"Cambio": "Automática",
+			"CorPrimaria": "Branco",
+			"Anunciante": "Pessoa Física",
+			"Imagem": "https://image.webmotors.com.br/app/_fotos/anuncioUsados/gigante/2018/201812/20181226/volkswagen-golf-1.4-tsi-variant-highline-16v-total-flex-4p-tiptronic-WMIMAGEM14130678989.jpg",
+			"TipoVeiculo": "Carro",
+			"TipoAnuncio": "U",
+			"Cidade": "Cotia",
+			"Uf": "SP",
+			"QuantidadeFotos": 8
+		}, {
+			"Id": 24786319,
+			"Marca": "JEEP",
+			"Modelo": "GRAND CHEROKEE",
+			"Versao": "3.6 LAREDO 4X4 V6 24V GASOLINA 4P AUTOMÁTICO",
+			"Preco": 71900.0,
+			"AnoModelo": 2011,
+			"AnoFabricacao": 2010,
+			"Quilometragem": 120000.0,
+			"Cambio": "Automática",
+			"CorPrimaria": "Preto",
+			"Anunciante": "Pessoa Física",
+			"Imagem": "https://image.webmotors.com.br/app/_fotos/anuncioUsados/gigante/2018/201808/20180815/jeep-grand-cherokee-3.6-laredo-4x4-v6-24v-gasolina-4p-automatico-wmimagem01020670694.jpg",
+			"TipoVeiculo": "Carro",
+			"Blindado": true,
+			"TipoAnuncio": "U",
+			"Cidade": "São Paulo",
+			"Uf": "SP",
+			"QuantidadeFotos": 8
+		}, {
+			"Id": 26486002,
+			"Marca": "MERCEDES-BENZ",
+			"Modelo": "A 200",
+			"Versao": "1.6 CGI FLEX 7G-DCT",
+			"Preco": 110900.0,
+			"AnoModelo": 2018,
+			"AnoFabricacao": 2017,
+			"Quilometragem": 18500.0,
+			"Cambio": "Automática",
+			"CorPrimaria": "Azul",
+			"Anunciante": "Pessoa Física",
+			"Imagem": "https://image.webmotors.com.br/app/_fotos/anuncioUsados/gigante/2018/201812/20181226/mercedesbenz-a-200-1.6-cgi-flex-7gdct-WMIMAGEM14291250975.jpg",
+			"TipoVeiculo": "Carro",
+			"TipoAnuncio": "U",
+			"Cidade": "Cotia",
+			"Uf": "SP",
+			"QuantidadeFotos": 8
+		}, {
+			"Id": 26000715,
+			"Marca": "VOLKSWAGEN",
+			"Modelo": "JETTA",
+			"Versao": "2.0 TSI HIGHLINE 200CV GASOLINA 4P TIPTRONIC",
+			"Preco": 52000.0,
+			"AnoModelo": 2012,
+			"AnoFabricacao": 2012,
+			"Quilometragem": 102000.0,
+			"Cambio": "Automática",
+			"CorPrimaria": "Preto",
+			"Anunciante": "Pessoa Física",
+			"Imagem": "https://image.webmotors.com.br/app/_fotos/anuncioUsados/gigante/2018/201811/20181125/volkswagen-jetta-2.0-tsi-highline-200cv-gasolina-4p-tiptronic-WMIMAGEM09512730923.jpg",
+			"TipoVeiculo": "Carro",
+			"TipoAnuncio": "U",
+			"Cidade": "São Paulo",
+			"Uf": "SP",
+			"QuantidadeFotos": 8
+		}, {
+			"Id": 22695850,
+			"Marca": "VOLKSWAGEN",
+			"Modelo": "GOLF",
+			"Versao": "1.4 TSI VARIANT HIGHLINE 16V GASOLINA 4P AUTOMÁTICO",
+			"Preco": 77900.0,
+			"AnoModelo": 2016,
+			"AnoFabricacao": 2015,
+			"Quilometragem": 57000.0,
+			"Cambio": "Automática",
+			"CorPrimaria": "Branco",
+			"Anunciante": "Pessoa Física",
+			"Imagem": "https://image.webmotors.com.br/app/_fotos/anuncioUsados/gigante/2018/201802/20180228/volkswagen-golf-1.4-tsi-variant-highline-16v-gasolina-4p-automatico-wmimagem22110989448.jpg",
+			"TipoVeiculo": "Carro",
+			"TipoAnuncio": "U",
+			"Cidade": "São Paulo",
+			"Uf": "SP",
+			"QuantidadeFotos": 8
+		}, {
+			"Id": 26351156,
+			"Marca": "HONDA",
+			"Modelo": "HR-V",
+			"Versao": "1.8 16V FLEX EX 4P AUTOMÁTICO",
+			"Preco": 93900.0,
+			"AnoModelo": 2016,
+			"AnoFabricacao": 2015,
+			"Quilometragem": 49800.0,
+			"Cambio": "CVT",
+			"CorPrimaria": "Cinza",
+			"Anunciante": "Pessoa Física",
+			"Imagem": "https://image.webmotors.com.br/app/_fotos/anuncioUsados/gigante/2018/201812/20181216/honda-hrv-1.8-16v-flex-ex-4p-automatico-WMIMAGEM18141908833.jpg",
+			"TipoVeiculo": "Carro",
+			"Blindado": true,
+			"TipoAnuncio": "U",
+			"Cidade": "São Paulo",
+			"Uf": "SP",
+			"QuantidadeFotos": 8
+		}, {
+			"Id": 26506361,
+			"Marca": "VOLKSWAGEN",
+			"Modelo": "PASSAT",
+			"Versao": "2.0 16V TSI BLUEMOTION GASOLINA HIGHLINE 4P DSG",
+			"Preco": 185000.0,
+			"AnoModelo": 2018,
+			"AnoFabricacao": 2018,
+			"Quilometragem": 6000.0,
+			"Cambio": "Automática",
+			"CorPrimaria": "Prata",
+			"Anunciante": "Pessoa Física",
+			"Imagem": "https://image.webmotors.com.br/app/_fotos/anuncioUsados/gigante/2018/201812/20181228/volkswagen-passat-2.0-16v-tsi-bluemotion-gasolina-highline-4p-dsg-WMIMAGEM10354281285.jpg",
+			"TipoVeiculo": "Carro",
+			"Blindado": true,
+			"TipoAnuncio": "U",
+			"Cidade": "São Paulo",
+			"Uf": "SP",
+			"QuantidadeFotos": 8
+		}, {
+			"Id": 25389791,
+			"Marca": "VOLKSWAGEN",
+			"Modelo": "JETTA",
+			"Versao": "2.5 I 20V 170CV GASOLINA 4P TIPTRONIC",
+			"Preco": 31900.0,
+			"AnoModelo": 2009,
+			"AnoFabricacao": 2008,
+			"Quilometragem": 61000.0,
+			"Cambio": "Automática",
+			"CorPrimaria": "Prata",
+			"Anunciante": "Pessoa Física",
+			"Imagem": "https://image.webmotors.com.br/app/_fotos/anuncioUsados/gigante/2018/201809/20180929/volkswagen-jetta-2.5-i-20v-170cv-gasolina-4p-tiptronic-WMIMAGEM13302443491.jpg",
+			"TipoVeiculo": "Carro",
+			"Blindado": true,
+			"TipoAnuncio": "U",
+			"Cidade": "São Paulo",
+			"Uf": "SP",
+			"QuantidadeFotos": 8
+		}, {
+			"Id": 26514975,
+			"Marca": "MINI",
+			"Modelo": "COOPER",
+			"Versao": "1.6 S 16V TURBO GASOLINA 2P AUTOMÁTICO",
+			"Preco": 80000.0,
+			"AnoModelo": 2013,
+			"AnoFabricacao": 2013,
+			"Quilometragem": 25000.0,
+			"Cambio": "Automática",
+			"CorPrimaria": "Azul",
+			"Anunciante": "Pessoa Física",
+			"Imagem": "https://image.webmotors.com.br/app/_fotos/anuncioUsados/gigante/2018/201812/20181229/mini-cooper-1.6-s-16v-turbo-gasolina-2p-automatico-WMIMAGEM00171097678.jpg",
+			"TipoVeiculo": "Carro",
+			"Blindado": true,
+			"TipoAnuncio": "U",
+			"Cidade": "São Paulo",
+			"Uf": "SP",
+			"QuantidadeFotos": 8
+		}, {
+			"Id": 25229423,
+			"Marca": "VOLVO",
+			"Modelo": "XC60",
+			"Versao": "3.0 T6 RD AWD TURBO GASOLINA 4P AUTOMÁTICO",
+			"Preco": 154900.0,
+			"AnoModelo": 2015,
+			"AnoFabricacao": 2014,
+			"Quilometragem": 39000.0,
+			"Cambio": "Automática",
+			"CorPrimaria": "Branco",
+			"Anunciante": "Pessoa Física",
+			"Imagem": "https://image.webmotors.com.br/app/_fotos/anuncioUsados/gigante/2018/201809/20180917/volvo-xc60-3.0-t6-rd-awd-turbo-gasolina-4p-automatico-WMIMAGEM21055459235.jpg",
+			"TipoVeiculo": "Carro",
+			"Blindado": true,
+			"TipoAnuncio": "U",
+			"Cidade": "São Paulo",
+			"Uf": "SP",
+			"QuantidadeFotos": 8
+		}, {
+			"Id": 25363791,
+			"Marca": "VOLKSWAGEN",
+			"Modelo": "FOX",
+			"Versao": "1.0 MI TREND 8V FLEX 4P MANUAL",
+			"Preco": 20500.0,
+			"AnoModelo": 2009,
+			"AnoFabricacao": 2008,
+			"Quilometragem": 80500.0,
+			"Cambio": "Manual",
+			"CorPrimaria": "Prata",
+			"Anunciante": "Pessoa Física",
+			"Imagem": "https://image.webmotors.com.br/app/_fotos/anuncioUsados/gigante/2018/201809/20180927/volkswagen-fox-1.0-mi-trend-8v-flex-4p-manual-WMIMAGEM14334551680.jpg",
+			"TipoVeiculo": "Carro",
+			"TipoAnuncio": "U",
+			"Cidade": "Jundiaí",
+			"Uf": "SP",
+			"QuantidadeFotos": 8
+		}, {
+			"Id": 26038581,
+			"Marca": "CHEVROLET",
+			"Modelo": "PRISMA",
+			"Versao": "1.4 MPFI LT 8V FLEX 4P MANUAL",
+			"Preco": 22900.0,
+			"AnoModelo": 2012,
+			"AnoFabricacao": 2011,
+			"Quilometragem": 82000.0,
+			"Cambio": "Manual",
+			"CorPrimaria": "Cinza",
+			"Anunciante": "Pessoa Física",
+			"Imagem": "https://image.webmotors.com.br/app/_fotos/anuncioUsados/gigante/2018/201811/20181121/chevrolet-prisma-1.4-mpfi-lt-8v-flex-4p-manual-WMIMAGEM09502105173.jpg",
+			"TipoVeiculo": "Carro",
+			"TipoAnuncio": "U",
+			"Cidade": "São Paulo",
+			"Uf": "SP",
+			"QuantidadeFotos": 5
+		}, {
+			"Id": 26405400,
+			"Marca": "FORD",
+			"Modelo": "ECOSPORT",
+			"Versao": "2.0 TITANIUM 16V FLEX 4P POWERSHIFT",
+			"Preco": 67490.0,
+			"AnoModelo": 2017,
+			"AnoFabricacao": 2016,
+			"Quilometragem": 32029.0,
+			"Cambio": "Automática",
+			"CorPrimaria": "Branco",
+			"Anunciante": "Pessoa Física",
+			"Imagem": "https://image.webmotors.com.br/app/_fotos/anuncioUsados/gigante/2018/201812/20181219/ford-ecosport-2.0-titanium-16v-flex-4p-powershift-WMIMAGEM16434993115.jpg",
+			"TipoVeiculo": "Carro",
+			"TipoAnuncio": "U",
+			"Cidade": "São Caetano do Sul",
+			"Uf": "SP",
+			"QuantidadeFotos": 8
+		}, {
+			"Id": 26436252,
+			"Marca": "PEUGEOT",
+			"Modelo": "207",
+			"Versao": "1.4 X-LINE 8V FLEX 4P MANUAL",
+			"Preco": 14900.0,
+			"AnoModelo": 2011,
+			"AnoFabricacao": 2010,
+			"Quilometragem": 93329.0,
+			"Cambio": "Manual",
+			"CorPrimaria": "Prata",
+			"Anunciante": "Pessoa Física",
+			"Imagem": "https://image.webmotors.com.br/app/_fotos/anuncioUsados/gigante/2018/201812/20181219/peugeot-207-1.4-xline-8v-flex-4p-manual-WMIMAGEM14142500314.jpg",
+			"TipoVeiculo": "Carro",
+			"TipoAnuncio": "U",
+			"Cidade": "São Bernardo do Campo",
+			"Uf": "SP",
+			"QuantidadeFotos": 6
+		}, {
+			"Id": 26127089,
+			"Marca": "PORSCHE",
+			"Modelo": "MACAN",
+			"Versao": "2.0 16V GASOLINA 4P AUTOMÁTICO",
+			"Preco": 285000.0,
+			"AnoModelo": 2017,
+			"AnoFabricacao": 2017,
+			"Quilometragem": 12000.0,
+			"Cambio": "Automática",
+			"CorPrimaria": "Preto",
+			"Anunciante": "Pessoa Física",
+			"Imagem": "https://image.webmotors.com.br/app/_fotos/anuncioUsados/gigante/2018/201811/20181127/porsche-macan-2.0-16v-gasolina-4p-automatico-WMIMAGEM15432438211.jpg",
+			"TipoVeiculo": "Carro",
+			"TipoAnuncio": "U",
+			"Cidade": "Santana de Parnaíba",
+			"Uf": "SP",
+			"QuantidadeFotos": 4
+		}, {
+			"Id": 25870869,
+			"Marca": "FORD",
+			"Modelo": "FOCUS",
+			"Versao": "1.6 GLX 16V FLEX 4P MANUAL",
+			"Preco": 32980.0,
+			"AnoModelo": 2013,
+			"AnoFabricacao": 2013,
+			"Quilometragem": 78000.0,
+			"Cambio": "Manual",
+			"CorPrimaria": "Prata",
+			"Anunciante": "Pessoa Física",
+			"Imagem": "https://image.webmotors.com.br/app/_fotos/anuncioUsados/gigante/2018/201811/20181108/ford-focus-1.6-glx-16v-flex-4p-manual-WMIMAGEM13084318982.jpg",
+			"TipoVeiculo": "Carro",
+			"TipoAnuncio": "U",
+			"Cidade": "São Bernardo do Campo",
+			"Uf": "SP",
+			"QuantidadeFotos": 5
+		}, {
+			"Id": 26268916,
+			"Marca": "HYUNDAI",
+			"Modelo": "HB20",
+			"Versao": "1.6 COMFORT PLUS 16V FLEX 4P MANUAL",
+			"Preco": 34200.0,
+			"AnoModelo": 2013,
+			"AnoFabricacao": 2013,
+			"Quilometragem": 66000.0,
+			"Cambio": "Manual",
+			"CorPrimaria": "Prata",
+			"Anunciante": "Pessoa Física",
+			"Imagem": "https://image.webmotors.com.br/app/_fotos/anuncioUsados/gigante/2018/201812/20181217/hyundai-hb20-1.6-comfort-plus-16v-flex-4p-manual-WMIMAGEM10173244532.jpg",
+			"TipoVeiculo": "Carro",
+			"TipoAnuncio": "U",
+			"Cidade": "Valinhos",
+			"Uf": "SP",
+			"QuantidadeFotos": 8
+		}, {
+			"Id": 24405311,
+			"Marca": "TOYOTA",
+			"Modelo": "COROLLA",
+			"Versao": "2.0 XEI 16V FLEX 4P AUTOMÁTICO",
+			"Preco": 68000.0,
+			"AnoModelo": 2015,
+			"AnoFabricacao": 2014,
+			"Quilometragem": 59000.0,
+			"Cambio": "CVT",
+			"CorPrimaria": "Preto",
+			"Anunciante": "Pessoa Física",
+			"Imagem": "https://image.webmotors.com.br/app/_fotos/anuncioUsados/gigante/2018/201811/20181118/toyota-corolla-2.0-xei-16v-flex-4p-automatico-WMIMAGEM1452096522.jpg",
+			"TipoVeiculo": "Carro",
+			"TipoAnuncio": "U",
+			"Cidade": "Santo André",
+			"Uf": "SP",
+			"QuantidadeFotos": 7
+		}, {
+			"Id": 26479081,
+			"Marca": "VOLKSWAGEN",
+			"Modelo": "UP",
+			"Versao": "1.0 TSI MOVE UP 12V FLEX 4P MANUAL",
+			"Preco": 44900.0,
+			"AnoModelo": 2018,
+			"AnoFabricacao": 2017,
+			"Quilometragem": 34000.0,
+			"Cambio": "Manual",
+			"CorPrimaria": "Azul",
+			"Anunciante": "Pessoa Física",
+			"Imagem": "https://image.webmotors.com.br/app/_fotos/anuncioUsados/gigante/2018/201812/20181225/volkswagen-up-1.0-tsi-move-up-12v-flex-4p-manual-WMIMAGEM20170992495.jpg",
+			"TipoVeiculo": "Carro",
+			"TipoAnuncio": "U",
+			"Cidade": "Bagé",
+			"Uf": "RS",
+			"QuantidadeFotos": 8
+		}, {
+			"Id": 26021469,
+			"Marca": "TROLLER",
+			"Modelo": "T4",
+			"Versao": "3.2 TGV 4X4 20V TURBO INTERCOOLER DIESEL 2P MANUAL",
+			"Preco": 112000.0,
+			"AnoModelo": 2017,
+			"AnoFabricacao": 2016,
+			"Quilometragem": 28000.0,
+			"Cambio": "Manual",
+			"CorPrimaria": "Prata",
+			"Anunciante": "Pessoa Física",
+			"Imagem": "https://image.webmotors.com.br/app/_fotos/anuncioUsados/gigante/2018/201811/20181120/troller-t4-3.2-tgv-4x4-20v-turbo-intercooler-diesel-2p-manual-WMIMAGEM01502319097.jpg",
+			"TipoVeiculo": "Carro",
+			"TipoAnuncio": "U",
+			"Cidade": "São Luís",
+			"Uf": "MA",
+			"QuantidadeFotos": 6
+		}, {
+			"Id": 26031281,
+			"Marca": "HONDA",
+			"Modelo": "CIVIC",
+			"Versao": "2.0 16V FLEXONE EXL 4P CVT",
+			"Preco": 91800.0,
+			"AnoModelo": 2017,
+			"AnoFabricacao": 2016,
+			"Quilometragem": 14745.0,
+			"Cambio": "CVT",
+			"CorPrimaria": "Branco",
+			"Anunciante": "Pessoa Física",
+			"Imagem": "https://image.webmotors.com.br/app/_fotos/anuncioUsados/gigante/2018/201811/20181120/honda-civic-2.0-16v-flexone-exl-4p-cvt-WMIMAGEM16152569250.jpg",
+			"TipoVeiculo": "Carro",
+			"TipoAnuncio": "U",
+			"Cidade": "São Bernardo do Campo",
+			"Uf": "SP",
+			"QuantidadeFotos": 8
+		}, {
+			"Id": 26054848,
+			"Marca": "HONDA",
+			"Modelo": "FIT",
+			"Versao": "1.5 LX 16V FLEX 4P AUTOMÁTICO",
+			"Preco": 49900.0,
+			"AnoModelo": 2015,
+			"AnoFabricacao": 2014,
+			"Quilometragem": 59000.0,
+			"Cambio": "Automática",
+			"CorPrimaria": "Preto",
+			"Anunciante": "Pessoa Física",
+			"Imagem": "https://image.webmotors.com.br/app/_fotos/anuncioUsados/gigante/2018/201812/20181204/honda-fit-1.5-lx-16v-flex-4p-automatico-wmimagem07040805598.jpg",
+			"TipoVeiculo": "Carro",
+			"TipoAnuncio": "U",
+			"Cidade": "São Paulo",
+			"Uf": "SP",
+			"QuantidadeFotos": 8
+		}, {
+			"Id": 26070625,
+			"Marca": "CITROËN",
+			"Modelo": "C4",
+			"Versao": "2.0 GLX 16V FLEX 4P AUTOMÁTICO",
+			"Preco": 21999.0,
+			"AnoModelo": 2010,
+			"AnoFabricacao": 2009,
+			"Quilometragem": 102000.0,
+			"Cambio": "Automática",
+			"CorPrimaria": "Preto",
+			"Anunciante": "Pessoa Física",
+			"Imagem": "https://image.webmotors.com.br/app/_fotos/anuncioUsados/gigante/2018/201811/20181122/citroen-c4-2.0-glx-16v-flex-4p-automatico-WMIMAGEM22171564354.jpg",
+			"TipoVeiculo": "Carro",
+			"TipoAnuncio": "U",
+			"Cidade": "Taboão da Serra",
+			"Uf": "SP",
+			"QuantidadeFotos": 7
+		}, {
+			"Id": 26013647,
+			"Marca": "FORD",
+			"Modelo": "KA",
+			"Versao": "1.5 SIGMA FLEX SE PLUS MANUAL",
+			"Preco": 37000.0,
+			"AnoModelo": 2017,
+			"AnoFabricacao": 2016,
+			"Quilometragem": 52000.0,
+			"Cambio": "Manual",
+			"CorPrimaria": "Branco",
+			"Anunciante": "Pessoa Física",
+			"Imagem": "https://image.webmotors.com.br/app/_fotos/anuncioUsados/gigante/2018/201811/20181119/ford-ka-1.5-sigma-flex-se-manual-WMIMAGEM14075523052.jpg",
+			"TipoVeiculo": "Carro",
+			"TipoAnuncio": "U",
+			"Cidade": "Mogi das Cruzes",
+			"Uf": "SP",
+			"QuantidadeFotos": 5
+		}],
+		"Quantidade": 374186
+	}
+}
+
+
+
+
+###############################################################################
+################
+
+
+GET /api/carro/detalhe?codigoAnuncio=26485705 HTTP/1.1
+Authorization: Bearer 4FgUDfH6DSPyNWR-ZjaF0QivMwQbE-8TIVVLa-YpvCnIMI9jnbQYgwu6yFF7N_sCBwvRtYHrA27WA6gkT0iUFNaaAU8Pfzg4KHPhnxQsc3_AUoyeMZLF6QcFcEFveE7szhUwijxm4UZz32hcyPMEZxiG_uZQ59VBI3BrReNhGangAuRpjqlOQlS-q5b1iG2JS36MYO94jupkTzv51G29YLosMwjEp6-m_RUtltrYSfaCwlLY9xr_opFBV1dlAJHBQp6T7dRd7TqCyrREnyzujQ1FMpPZpZFXxIllsoll35qVyMNBVp2D2jrYkhG5qJUzV3RF9fLKGYdkYYdUzVNdUDCTAipXsI1fXHkYJuTp0qD6non4zzQGFSTKxgl1aQSg
+Accept: application/json
+Accept-Charset: UTF-8
+User-Agent: Dalvik/1.6.0 (Linux; U; Android 4.4.4; XT1032 Build/KXB21.14-L1.40)
+Host: apisearch.webmotors.com.br
+Connection: Keep-Alive
+Accept-Encoding: gzip
+
+
+
+{
+	"Sucesso": true,
+	"Retorno": {
+		"Id": 26485705,
+		"TipoVeiculo": "Carro",
+		"TipoAnuncio": "U",
+		"Fotos": ["https://image.webmotors.com.br/app/_fotos/anuncioUsados/gigante/2018/201812/20181226/volkswagen-golf-1.4-tsi-variant-highline-16v-total-flex-4p-tiptronic-WMIMAGEM14130678989.jpg", "https://image.webmotors.com.br/app/_fotos/anuncioUsados/gigante/2018/201812/20181226/volkswagen-golf-1.4-tsi-variant-highline-16v-total-flex-4p-tiptronic-WMIMAGEM14185020335.jpg", "https://image.webmotors.com.br/app/_fotos/anuncioUsados/gigante/2018/201812/20181226/volkswagen-golf-1.4-tsi-variant-highline-16v-total-flex-4p-tiptronic-WMIMAGEM1419293005.jpg", "https://image.webmotors.com.br/app/_fotos/anuncioUsados/gigante/2018/201812/20181226/volkswagen-golf-1.4-tsi-variant-highline-16v-total-flex-4p-tiptronic-WMIMAGEM14202276779.jpg", "https://image.webmotors.com.br/app/_fotos/anuncioUsados/gigante/2018/201812/20181226/volkswagen-golf-1.4-tsi-variant-highline-16v-total-flex-4p-tiptronic-WMIMAGEM1420511945.jpg", "https://image.webmotors.com.br/app/_fotos/anuncioUsados/gigante/2018/201812/20181226/volkswagen-golf-1.4-tsi-variant-highline-16v-total-flex-4p-tiptronic-WMIMAGEM14213168185.jpg", "https://image.webmotors.com.br/app/_fotos/anuncioUsados/gigante/2018/201812/20181226/volkswagen-golf-1.4-tsi-variant-highline-16v-total-flex-4p-tiptronic-WMIMAGEM14220889757.jpg", "https://image.webmotors.com.br/app/_fotos/anuncioUsados/gigante/2018/201812/20181226/volkswagen-golf-1.4-tsi-variant-highline-16v-total-flex-4p-tiptronic-WMIMAGEM14224908960.jpg"],
+		"TipoAnunciante": "Pessoa Física",
+		"Nome": "RODRIGO",
+		"Cidade": "Cotia",
+		"Estado": "São Paulo (SP)",
+		"Preco": 90900.0,
+		"Latitude": -23.6026684,
+		"Longitude": -46.9194693,
+		"DataAnuncio": "2018-12-26T16:12:27.667Z",
+		"IdRevendedor": 6162751,
+		"Marca": {
+			"Value": "VOLKSWAGEN",
+			"Id": 5
+		},
+		"Modelo": {
+			"Value": "GOLF",
+			"Id": 689
+		},
+		"Versao": {
+			"Value": "1.4 TSI VARIANT HIGHLINE 16V TOTAL FLEX 4P TIPTRONIC",
+			"Id": 346892
+		},
+		"AnoModelo": 2017,
+		"AnoFabricacao": 2016,
+		"Quilometragem": 13000.0,
+		"NumeroPortas": "4",
+		"CorPrimaria": "Branco",
+		"Cambio": "Automática",
+		"Combustivel": "Gasolina e álcool",
+		"FinalPlaca": 3.0,
+		"Necessidade": [],
+		"Carroceria": "Perua/SW",
+		"Atributos": ["Todas as revisões feitas pela concessionária", "IPVA pago", "Licenciado"],
+		"Opcionais": ["Airbag", "Alarme", "Ar quente", "Banco com regulagem de altura", "Computador de bordo", "Controle de tração", "Ar condicionado", "Controle automático de velocidade", "Sensor de chuva", "Sensor de estacionamento", "Teto solar", "Volante com regulagem de altura", "Bancos em couro", "GPS"],
+		"LogoLoja": "http://img.webmotors.com.br/_banner/",
+		"Guid": "600e99f2-4ae9-42c1-8b8c-97107bcc95db"
+	}
+}
+
+
+#####################################
+#############
+
+	GET /api/carro/telefones?codigoAnuncio=26485705&origem=1 HTTP/1.1
+Authorization	Bearer 4FgUDfH6DSPyNWR-ZjaF0QivMwQbE-8TIVVLa-YpvCnIMI9jnbQYgwu6yFF7N_sCBwvRtYHrA27WA6gkT0iUFNaaAU8Pfzg4KHPhnxQsc3_AUoyeMZLF6QcFcEFveE7szhUwijxm4UZz32hcyPMEZxiG_uZQ59VBI3BrReNhGangAuRpjqlOQlS-q5b1iG2JS36MYO94jupkTzv51G29YLosMwjEp6-m_RUtltrYSfaCwlLY9xr_opFBV1dlAJHBQp6T7dRd7TqCyrREnyzujQ1FMpPZpZFXxIllsoll35qVyMNBVp2D2jrYkhG5qJUzV3RF9fLKGYdkYYdUzVNdUDCTAipXsI1fXHkYJuTp0qD6non4zzQGFSTKxgl1aQSg
+Accept	application/json
+Accept-Charset	UTF-8
+User-Agent	Dalvik/1.6.0 (Linux; U; Android 4.4.4; XT1032 Build/KXB21.14-L1.40)
+Host	apisearch.webmotors.com.br
+Connection	Keep-Alive
+Accept-Encoding	gzip
+{
+	"Sucesso": true,
+	"Retorno": ["(11) 994072103", "(11) 46160859"]
+}
+
+
+
+
+
+
+################################
+###
+
+
+GET /v1/minha-wm-carro/similares?codigoMarca=5&codigoModelo=689&anoModelo=2017&blindado=false&UF=SP&codigoVersao=346892 HTTP/1.1
+Authorization: Bearer 4FgUDfH6DSPyNWR-ZjaF0QivMwQbE-8TIVVLa-YpvCnIMI9jnbQYgwu6yFF7N_sCBwvRtYHrA27WA6gkT0iUFNaaAU8Pfzg4KHPhnxQsc3_AUoyeMZLF6QcFcEFveE7szhUwijxm4UZz32hcyPMEZxiG_uZQ59VBI3BrReNhGangAuRpjqlOQlS-q5b1iG2JS36MYO94jupkTzv51G29YLosMwjEp6-m_RUtltrYSfaCwlLY9xr_opFBV1dlAJHBQp6T7dRd7TqCyrREnyzujQ1FMpPZpZFXxIllsoll35qVyMNBVp2D2jrYkhG5qJUzV3RF9fLKGYdkYYdUzVNdUDCTAipXsI1fXHkYJuTp0qD6non4zzQGFSTKxgl1aQSg
+Accept: application/json
+Accept-Charset: UTF-8
+User-Agent: Dalvik/1.6.0 (Linux; U; Android 4.4.4; XT1032 Build/KXB21.14-L1.40)
+Host: apisearch.webmotors.com.br
+Connection: Keep-Alive
+Accept-Encoding: gzip
+
+
+
+{
+	"Sucesso": true,
+	"Retorno": {
+		"PrecoFIPE": "R$ 0,00",
+		"PrecoMaiorWebMotors": "R$ 109.999,00",
+		"PrecoMedioWebMotors": "R$ 96.694,38",
+		"PrecoMenorWebMotors": "R$ 85.889,00",
+		"QtdeAnunciosAtivos": 32,
+		"dtFipe": "01/01/2019",
+		"dtWebMotors": "05/01/2019"
+	},
+	"Mensagens": ["Sucesso"]
+}

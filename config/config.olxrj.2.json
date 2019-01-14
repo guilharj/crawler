@@ -12,7 +12,7 @@
     {
       "type": "html",
       "name": "olx",
-      "domain": "https://sp.olx.com.br",
+      "domain": "https://rj.olx.com.br",
       "dependency": {
         "sitemap": {
           "hasMany": "item",
@@ -21,7 +21,7 @@
       },
       "pages": [
         {
-        "rootUrl": "/sao-paulo-e-regiao/zona-sul/autos-e-pecas/carros-vans-e-utilitarios?rs=29",
+        "rootUrl": "/rio-de-janeiro-e-regiao/zona-norte/autos-e-pecas/carros-vans-e-utilitarios?rs=29",
         "name": "sitemap",
         "nextPages": [
           {

@@ -1,0 +1,51 @@
+{
+  "remote": {
+    "url": "http://alfred-v1.b2w.io/wp-json/api/v1/settings_sanguessuga"
+  },
+  "database": {
+    "development": {
+      "host": "localhost",
+      "port": 5432,
+      "name": "crawler",
+      "user": "guilherme",
+      "password": ""
+    }
+  },
+  "websites": [
+    {
+      "type": "html",
+      "name": "olx",
+      "domain": "https://sp.olx.com.br",
+      "dependency": {
+        "sitemap": {
+          "hasMany": "item",
+          "through": "url"
+        }
+      },
+      "pages": [
+        {
+        "rootUrl": "/autos-e-pecas/carros-vans-e-utilitarios?me=100000&re=37&rs=29",
+        "name": "sitemap",
+        "nextPages": null,
+        "data": [
+          {
+            "selector": ".OLXad-list-link",
+            "newKey": "url",
+            "attr": "href"
+          }
+        ]
+       },
+        {
+          "name": "item",
+          "data": [
+            {
+              "selector": "#ad_title",
+              "newKey": "name",
+              "method": "text"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

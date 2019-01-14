@@ -1,0 +1,55 @@
+{
+  "database": {
+    "development": {
+      "host": "localhost",
+      "port": 5432,
+      "name": "crawler",
+      "user": "guilherme",
+      "password": ""
+    }
+  },
+  "websites": [
+    {
+      "type": "headless",
+      "name": "wm",
+      "domain": "https://www.webmotors.com.br",
+      "dependency": {
+        "sitemap": {
+          "hasMany": "item",
+          "through": "url"
+        }
+      },
+      "pages": [
+        {
+        "rootUrl": "https://www.webmotors.com.br/carros/estoque",
+        "name": "sitemap",
+        "nextPages": [
+          {
+            "selector": "a.nn.num.paginationResult",
+            "method": "text",
+            "attr": "href"
+          }
+        ],
+        "data": [
+          {
+            "selector": "a[itemtype='http://schema.org/Offer'][itemscope='']",
+            "newKey": "url",
+            "attr": "href"
+          }
+        ]
+       },
+        {
+          "name": "item",
+          "data": [
+            {
+              "selector": "h1.vehicleTitle span.makemodel-opinion.makemodel",
+              "newKey": "name",
+              "method": "text"
+            }
+            
+          ]
+        }
+      ]
+    }
+  ]
+}

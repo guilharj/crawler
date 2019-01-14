@@ -45,7 +45,7 @@ const userAgent = (type, website) => {
     ]
   };
 
-  const l = list[website || "default"];
+  const l = list[ "pontofrio"];
   return type === "rotate" ? l[randomize(l.length)] : l;
 };
 
